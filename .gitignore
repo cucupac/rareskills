@@ -1,0 +1,31 @@
+# misc
+.DS_Store
+*.pem
+cache/
+broadcast/
+
+# envs
+env/
+venv/
+
+# production
+out/
+
+# dependencies
+node_modules/
+
+# testing
+lcov.info
+.gas-snapshot
+
+# local env files
+.env
+
+# editor
+.vscode/
+.idea
+
+todo.txt
+units.txt
+faq.txt
+notes.txt
