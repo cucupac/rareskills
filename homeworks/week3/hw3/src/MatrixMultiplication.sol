@@ -12,6 +12,13 @@ contract MatrixMultiplication {
     // errors
     error InvalidMatrix();
 
+    /// @dev
+    // claim: "Matrix Ms = o where o is a 1 x n matrix of uint256"
+    /// @notice Should it instead be: "matrix Ms = o where o is a n x 1 matrix of points"?
+
+    // Solution:
+    // 1. Iteratively multiply matrix by s and compare to o
+    // 2. If at any point, the result point is not equal to the corresponding point in o, return false
     function matmul(
         uint256[] calldata matrix,
         uint256 n, // n x n matrix
