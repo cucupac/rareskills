@@ -1,0 +1,3 @@
+[submodule "homeworks/week4/hw4-solidity/lib/forge-std"]
+	path = homeworks/week4/hw4-solidity/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
