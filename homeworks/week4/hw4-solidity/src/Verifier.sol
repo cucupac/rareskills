@@ -38,7 +38,7 @@ contract Verifier {
     }
 
     function getX1(uint256 x1, uint256 x2, uint256 x3) internal view returns (uint256 X1_x, uint256 X1_y) {
-        uint256 scalar = x1 + x2 + x3;
+        uint256 fieldElement = x1 + x2 + x3;
         (X1_x, X1_y) = PreCompiles.mul(scalar, G1_X, G1_Y);
     }
 

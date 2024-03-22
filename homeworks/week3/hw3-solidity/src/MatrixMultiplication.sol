@@ -23,7 +23,7 @@ contract MatrixMultiplication {
         uint256[] calldata matrix,
         uint256 n, // n x n matrix
         ECPoint[] calldata s, // n points
-        ECPoint[] calldata o // n points
+        uint256[] calldata o // n points multiple this by a generator to get a matrix of points to check against.
     ) public view returns (bool) {
         if (matrix.length != n * n || s.length != n || o.length != n) revert InvalidMatrix();
 
